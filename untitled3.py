@@ -57,7 +57,7 @@ for line in w:
     ls0.append(line.split('：')[0])
     ls1.append(int(line.split('：')[1]))  
 mydict=dict(zip(ls1,ls0))
-a=sorted(mydict.items(),key=lambda item:item[0])
+a=sorted(mydict.items(),key=lambda item:item[1])
 for k in a:
     f2.write(str(k)+'\n')
     
